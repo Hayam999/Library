@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="books.js" defer></script>
+</head>
+<body>
+    <dialog>
+        <form action="page" method="dialog" id="addBookForm">
+            <label for="title">Book Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author Name</label>
+            <input type="text" id="author" name="author">
+
+            <label for="pages">Number of Pages</label>
+            <input type="text" id="pages" pattern="[0-9]*" inputmode="numeric"
+            name="pages" required>
+
+            <label for="read">Read?</label>
+            <input type="checkbox" id="read" name="read">  
+            <button type="submit">Add Book</button>     
+        </form>
+        <button id="close-dialog">close</button>
+    </dialog>
+    <button id="add-book">+</button>
+
+</body>
+</html>
